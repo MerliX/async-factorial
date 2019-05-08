@@ -1,4 +1,4 @@
-FROM python3:alpine
+FROM python:3-alpine
 
 WORKDIR /app
 
@@ -7,4 +7,4 @@ RUN pip install -r requirements.txt
 
 COPY . .
 
-CMD ['python', 'server.py']
+CMD python -u server.py
